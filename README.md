@@ -3,13 +3,13 @@
 # How to use
 
 1. Install [OBS](https://obsproject.com/)
-2. Download this repository by clicking the green `Code` button, and then `Download ZIP`
-3. Extract the downloaded `.zip`
+2. Download a zip file of this repository from the `Releases` section on the right side of the page
+3. Extract the downloaded zip file
 4. Follow the steps below for the CSS theme and the script
 
 ## CSS theme
 
-1. In the extracted `.zip`, right click on `youtube-live-qa.css` and select `Edit`
+1. In the extracted zip file, right click on `youtube-live-qa.css` and select `Edit`
 2. Select all and copy the CSS
 3. In OBS, create a new `Browser` source
 4. Set it up with the following recommended defaults:
@@ -41,7 +41,7 @@ You can see the CSS theme in action in [this video](https://youtu.be/Bcz95Fyws5w
    - you should see `Loaded Python Version 3.10` in OBS
 7. Navigate to `Scripts`
 8. Click on the `+` to add a new script
-9. Navigate to where you extracted the `.zip` and select `update-youtube-chat-url.py`
+9. Navigate to where you extracted the zip file and select `update-youtube-chat-url.py`
 10. Select the newly added script `update-youtube-chat-url.py`
 11. Paste in your stream URL
     - This URL is only generated once you start streaming, so you can fill it in later
