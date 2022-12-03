@@ -1,3 +1,5 @@
+![demo](images/demo.png)
+
 # How to use
 
 1. Install [OBS](https://obsproject.com/)
@@ -22,7 +24,11 @@ Until you start the Q&A session, the source will be entirely invisible. (Keep in
 
 Advanced usage: You can customise the font and appearance by manually editing the CSS or combining it with [Chat v2.0 Style Generator](https://chatv2.septapus.com/).
 
+You can see the CSS theme in action in [this video](https://youtu.be/Bcz95Fyws5w?t=6016) (keep in mind that this was an early test without theming support and with unwanted expand-collapse animations.)
+
 ## Script
+
+![script demo](images/script-demo.png)
 
 ### First-time setup
 
@@ -54,3 +60,6 @@ Advanced usage: You can customise the font and appearance by manually editing th
 
 Doesn't properly work when there is a pinned message in chat. Unpin all messages before starting a Live Q&A session for best results.
 
+# Acknowledgements
+
+Thanks to [@VocaCircus](https://twitter.com/VocaCircus) for the idea and for trying it out!
