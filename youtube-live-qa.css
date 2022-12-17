@@ -136,6 +136,8 @@ yt-live-chat-creator-answers-questions-banner-renderer[in-collapsed-banner] {
  * Hide unwanted chat elements
  */
 
+/* hide every banned that is not the Q&A banner, eg. pinned message */
+yt-live-chat-banner-renderer:not([is-call-for-questions]):not([is-creator-answers-questions-banner]),
 yt-live-chat-header-renderer,
 iron-pages,
 #item-offset,
