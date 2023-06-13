@@ -1,0 +1,88 @@
+/*
+ * CSS theme for YouTube Emoji Reactions
+ * This hides all elements except the floating emoji reactons.
+ * Make sure the browser source has enough width and height so the emoji don't clip (tested with 500x650)
+ *
+ * Copyright (c) Susko3 <susko3@protonmail.com>. Licensed under the MIT Licence.
+ * See the LICENCE file in the repository root for full licence text.
+ */
+
+
+/*
+ * Hide the permanent ❤️ emoji button
+ */
+
+#fab-container {
+  display: none;
+}
+
+
+/*
+ * Zoom the page to the bottom right corner to make the reactions more visible
+ */
+
+body {
+    transform: scale(2.2); /* increase the scale if needed */
+    transform-origin: bottom right;
+}
+
+
+/*
+ * Make the screen purple if the emojis aren't working (refresh until it works!)
+ */
+
+#reaction-control-panel-overlay:empty {
+  background-color: purple;
+}
+
+#reaction-control-panel-overlay:empty::before {
+  content: "Refresh the source until it works 🙃";
+  font-size: 28px;
+  width: 23%;
+  padding-bottom: 20px;
+}
+
+
+/*
+ * Add padding to the continer so the emoji don't go out-of-bounds on the right
+ */
+
+#reaction-control-panel-overlay {
+	padding-right: 13%; 
+}
+
+
+/*
+ * Hide unwanted chat elements
+ */
+
+yt-live-chat-banner-renderer,
+yt-live-chat-header-renderer,
+iron-pages,
+#item-offset,
+#menu,
+#separator {
+  display: none;
+}
+
+
+/*
+ * Hide scrollbar
+ */
+
+yt-live-chat-item-list-renderer[allow-scroll] #item-scroller.yt-live-chat-item-list-renderer {
+  overflow: hidden;
+}
+
+#item-scroller.yt-live-chat-item-list-renderer {
+  --scrollbar-width: 0px;
+}
+
+
+/*
+ * Make the chat background transparent
+ */
+
+yt-live-chat-renderer {
+  background: transparent;
+}
