@@ -1,7 +1,19 @@
 /*
  * CSS theme for YouTube Emoji Reactions
  * This hides all elements except the floating emoji reactons.
- * Make sure the browser source has enough width and height so the emoji don't clip (tested with 500x650)
+ *
+ * OBS Browser source properties
+ *  - URL: https://www.youtube.com/live_chat?is_popout=1&v=dQw4w9WgXcQ (regular chat URL)
+ *  - Width: 500
+ *  - Height: 650
+ *  - Custom CSS: this file
+ *  ❌ (disable) Shutdown source when not visible
+ *  ❌ (disable) Refresh browser when scene becomes active
+ * 
+ * Sometimes the emoji thing doesn't load in (problem with YouTube), so I've made it display a bright purple screen saying
+ * "Refresh the source until it works 🙃" to make it obvious what to do.
+ * With 'Shutdown source when not visible' and 'Refresh browser when scene becomes active' disabled, you only have get it to load once
+ * and it should stay loaded even if switching scenes.
  *
  * Copyright (c) Susko3 <susko3@protonmail.com>. Licensed under the MIT Licence.
  * See the LICENCE file in the repository root for full licence text.
