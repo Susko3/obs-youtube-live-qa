@@ -68,13 +68,28 @@ body {
  * Hide unwanted chat elements
  */
 
+#header,
 yt-live-chat-banner-renderer,
 yt-live-chat-header-renderer,
+#live-chat-banner,
+yt-live-chat-banner-manager,
+#docked-messages,
+yt-live-chat-docked-message,
+yt-live-chat-action-panel-renderer,
 iron-pages,
 #item-offset,
 #menu,
 #separator {
   display: none;
+}
+
+
+/*
+ * Hide the gradient at the bottom when a pool is active
+ */
+
+#action-panel {
+  display: none !important;
 }
 
 
